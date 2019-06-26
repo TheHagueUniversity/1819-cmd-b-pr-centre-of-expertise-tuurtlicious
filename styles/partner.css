@@ -54,52 +54,51 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 500px 1fr 1fr;
+    grid-template-columns: 33.34% 33.34% 33.34%;
     grid-template-areas:
     "title title title"
     "menu menu menu"
-    "photo photo ad1"
-    "ad2 ad3 ad4"
+    "tree tree tree"
+    "ad1 ad1 ad3"
+    "ad2 ad2 ad3"
     "footer footer footer"
 }
 
 .header {
-  margin-top:
+  /* margin-top: */
   grid-area: title;
 }
 
 .menu {
   grid-area: menu;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 .photo {
   grid-area: photo;
 }
-
+.tree {
+  grid-area: tree;
+  margin-left: 13.25%;
+}
 .ad1 {
   grid-area: ad1;
-
+  margin:5%;
+  margin-top: 1%;
+  margin-left: 20%;
 
 }
 
 .ad2 {
-  margin: 10%;
-  margin-top: 15%;
+  margin: 5%;
+  margin-bottom: 20%;
+  margin-left: 20%;
   grid-area: ad2;
 }
 .ad3 {
-  margin: 10%;
-  margin-top: 15%;
   grid-area: ad3;
 }
 
-.ad4 {
-  margin: 10%;
-  margin-top: 15%;
-  grid-area: ad4;
-}
 
 .footer {
   grid-area: footer;
@@ -141,4 +140,14 @@ ul {
 }
 .linkbasic {
   text-decoration: none;
+}
+h3,.h3{
+  color:#9EA700;
+}
+input {
+  padding: 4px;
+}
+.tak{
+  text-decoration: none;
+  color: black;
 }
